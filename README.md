@@ -1,2 +1,1 @@
-# PWM_Sprayer_Control
-Visual Studio C# app
+# SprayerControl 2.4
