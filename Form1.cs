@@ -52,6 +52,8 @@ namespace ArduinoControlApp
             // All communicatiion through port 7777
             udpClient = new UdpClient(7777);
             arduinoEndPoint = new IPEndPoint(IPAddress.Parse("192.168.5.123"), 7777);
+            Debug.WriteLine($"Initialized arduinoEndPoint: {arduinoEndPoint.Address}:{arduinoEndPoint.Port}");
+
 
             StartListening();
             PopulateDebugLevelComboBox();
@@ -594,6 +596,10 @@ namespace ArduinoControlApp
                 {
                     string message = GenerateSettingsMessage();
                     byte[] bytes = Encoding.UTF8.GetBytes(message);
+
+                    // I know I shouldn't have to do this, but I can't find where the port is getting changed to 8888
+                    arduinoEndPoint = new IPEndPoint(IPAddress.Parse("192.168.5.123"), 7777);
+                    Debug.WriteLine($"Enforcing arduinoEndPoint: {arduinoEndPoint.Address}:{arduinoEndPoint.Port}");
                     udpClient.Send(bytes, bytes.Length, arduinoEndPoint);
 
                     MessageBox.Show("Settings have been sent successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
