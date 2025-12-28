@@ -30,7 +30,7 @@ Current Sensor  -  https://www.amazon.com/dp/B07VL8NY32?ref_=ppx_hzsearch_conn_d
 
 Teensy 4.1 W/Ethernet  -  https://www.amazon.com/dp/B08RSCFBNF?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1
 
-Teensy 4.1 W/Ethernet  -  https://www.amazon.com/dp/B08RSCFBNF?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1
+
 
 
 
