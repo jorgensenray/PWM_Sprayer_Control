@@ -983,7 +983,7 @@ namespace ArduinoControlApp
             Debug.WriteLine("Sending REQUEST_SENSOR_DATA...");
             RequestDataFromTeensy("REQUEST_SENSOR_DATA");
 
-            this.Size = new System.Drawing.Size(290, 600); // Width = 290, Height = 600
+            this.Size = new System.Drawing.Size(300, 620); // Width = 290, Height = 600
             BtnToggleView.Image = SprayerControl_2._4.Properties.Resources.Next; // Set initial button image to "Next"
 
             // Initialize the sprayer control button
@@ -1084,13 +1084,13 @@ namespace ArduinoControlApp
             if (isExpanded)
             {
                 // Switch to compact view
-                this.Size = new System.Drawing.Size(290, 600); // Compact size W, H
+                this.Size = new System.Drawing.Size(300, 620); // Compact size W, H
                 BtnToggleView.Image = SprayerControl_2._4.Properties.Resources.Next; // Change button image to "Next"
             }
             else
             {
                 // Switch to expanded view
-                this.Size = new System.Drawing.Size(900, 600); // Expanded size W, H
+                this.Size = new System.Drawing.Size(900, 620); // Expanded size W, H
                 BtnToggleView.Image = SprayerControl_2._4.Properties.Resources.Previous; // Change button image to "Previous"
             }
 
@@ -1210,6 +1210,15 @@ namespace ArduinoControlApp
         private void txtKp_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtpressure.Clear();
+            txtactualGPAave.Clear();
+            txtonTime.Clear();
+            txtAcresTotal.Clear();
+            txtAcresPerHour.Clear();
         }
     }
 }

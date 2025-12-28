@@ -118,35 +118,108 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="textBox1.Text" xml:space="preserve">
-    <value>Spray width is the  width of the individual 
-nozzle spray pattern.
+    <value>- Imperial or Metric value display 
 
-# Nozzles - how many Nozzles are there?
+- Spray width is the  width of the individual 
+   nozzle spray pattern.
 
-Ball/Hyd - If you have an electric Ball Valve controlling the pressure enter 1. If hyd PWM enter 2.
+ - # Nozzles - how many Nozzles are there?
 
-Wheel Angle - This # will set when you want individual nozzle speed compensation to start. It's based on your actual wheel angle.  For example if you enter 5, when your steer wheel angle is &gt;= 5 degrees turn compensation will start.
+ - Ball/Hyd - If you have an electric Ball 
+   Valve controlling the pressure enter 1.
+   If hyd PWM enter 2. (not currently active)
 
-Duty Cycle - this is just a starting point.
-A way to prime the pump.  Default is 50%.
+ - Wheel Angle - This # will set when you 
+   want individual nozzle turn compensation
+   to start. It's based on your actual wheel
+   angle. For example if you enter 5, when
+   your steer wheel angle is &gt;= 5 degrees
+   turn compensation will start.
 
-HZ - This will run anywhere from 1 - 30 Hz or times per second. The sweet spot seems to be 15 to 20 Hz. 
+ - Duty Cycle Adjust - factor used to tune .
 
-If your pressure control is hyd, then you will be using the PID controller. Tune it here.</value>
+ - HZ - This will run anywhere from 1 - 30 Hz 
+   (times per second). The sweet spot seems
+   to be 10 to 15 Hz. 
+
+   #####  Kick and Hold tuning  ####
+
+ - Kick Duration in millie seconds (2-6)
+
+ - Hold Duty cycle % (10 - 30)
+
+ - Hold PWM Frequency (50 - 500)
+
+ - HoldRefV (System voltage)
+
+ - Consult included PDF for more K&amp;H
+   details.</value>
   </data>
   <data name="textBox2.Text" xml:space="preserve">
-    <value>The pressure sensor needs to be calibrated first. With a multimeter measure the voltage on the PCB where marked Pres Test. Subtract that measurement from what the serial monitor shows, enter that # and press send. Seperate function.
+    <value>  - The pressure sensor
+   needs to be calibrated.
+   With a multimeter
+   measure the voltage on
+   the PCB. Subtract that
+   measurement from what 
+   the serial monitor shows,
+   enter that number.
+   Seperate ino.
 
-Now run the file for the ball valve. Start low and work up slowly until the ball valve just moves. Enter that and press send.
+ - Min Ball Valve
+   (Not currently
+    implimented)
 
-Last is the flow sensor.  It's self calabrating. When it's done it will tell you and the # will be saved.
+ - Last is the flow sensor.
+   There is a seperate .ino
+   to calibrate this. Enter
+   the resulting value.
 
-There are 3 Switches.  
+ - PID tuning (not currently
+   used)
+ 
+ - Debug Print used to print
+   different values on the
+   arduino serial monitor.</value>
+  </data>
+  <data name="textBox3.Text" xml:space="preserve">
+    <value> - Enter your Target
+   pressure.
+   (display only)
 
-The Main On/Off. 
+ - and your Gallons per acre.
 
-PWM/Conventional.  Check the box to use PWM, leave it unchecked if you want to have an ON/OFF conventional sprayer, 
+ - Speed comes from AOG 
+    gpsSpeed
 
-And the 3rd one is for a staggered nozzle ON/OFF. If checked all Even # nozzles will fire and at 1/2 the "on time" will shut off and the Odd # Nozzles will fire.</value>
+ - %Duty shoot for 70%
+
+ - Acres sprayed
+
+ - Acres per hour
+
+ - Send updated values to
+   the PWM spray module.
+
+ - Conventional/PWM mode
+   selection conventional
+   = valves either on
+   or off.
+ 
+ - Staggered - if selceted the
+   valves will phase (even/odd
+   - on/off) within the Hz
+   period. Recommend
+   having Stagger on to
+   prevent streaking.
+
+ - Settings show more/less
+   toggle.
+
+ - Clear - Actual values.
+
+ - The actual values will be
+   displayed and updated
+   every second.</value>
   </data>
 </root>

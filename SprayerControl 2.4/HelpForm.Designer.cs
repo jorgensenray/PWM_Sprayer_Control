@@ -40,7 +40,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(372, 63);
+            this.textBox1.Location = new System.Drawing.Point(381, 63);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -77,11 +77,9 @@
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox3.Size = new System.Drawing.Size(334, 312);
+            this.textBox3.Size = new System.Drawing.Size(339, 485);
             this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "Enter the Target values for Your Pressure - On time I shoot for 60% - and your Ga" +
-    "llons per acre.\r\n\r\nThe actual values will be displayed and updated every second." +
-    "";
+            this.textBox3.Text = resources.GetString("textBox3.Text");
             // 
             // label2
             // 

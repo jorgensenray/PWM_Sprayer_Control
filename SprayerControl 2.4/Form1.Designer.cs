@@ -98,6 +98,7 @@ namespace ArduinoControlApp
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.txtAcresPerHour = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtpressure
@@ -595,7 +596,7 @@ namespace ArduinoControlApp
             // 
             // BtnToggleView
             // 
-            this.BtnToggleView.Location = new System.Drawing.Point(95, 754);
+            this.BtnToggleView.Location = new System.Drawing.Point(209, 764);
             this.BtnToggleView.Name = "BtnToggleView";
             this.BtnToggleView.Size = new System.Drawing.Size(148, 76);
             this.BtnToggleView.TabIndex = 58;
@@ -632,7 +633,7 @@ namespace ArduinoControlApp
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(63, 833);
+            this.label26.Location = new System.Drawing.Point(177, 843);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(194, 40);
             this.label26.TabIndex = 65;
@@ -642,7 +643,7 @@ namespace ArduinoControlApp
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(88, 703);
+            this.label27.Location = new System.Drawing.Point(204, 709);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(155, 40);
             this.label27.TabIndex = 66;
@@ -774,11 +775,23 @@ namespace ArduinoControlApp
             this.txtAcresPerHour.TabIndex = 78;
             this.txtAcresPerHour.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // btnClear
+            // 
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(18, 764);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(145, 76);
+            this.btnClear.TabIndex = 80;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1339, 934);
+            this.ClientSize = new System.Drawing.Size(1339, 944);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.txtAcresPerHour);
             this.Controls.Add(this.label32);
@@ -931,6 +944,7 @@ namespace ArduinoControlApp
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.TextBox txtAcresPerHour;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 
