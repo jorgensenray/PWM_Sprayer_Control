@@ -14,7 +14,7 @@ This AOG compatible controller will cost $40 for a Teensy 4.1 W/Ethernet that wi
 
 So you’re just shy of $100 in these parts.
 
-You need a PWM driver for each valve at a cost of around $10.  (Digikey thru hole parts). or JLC SMD components - assembled for $2.17 (I just ordered some and that's my cost w/shipping). 
+You need a PWM driver for each valve at a cost of around $10.  (Digikey thru hole parts). or JLC SMD components - assembled for $10.96 (I just ordered some and that's my cost w/shipping). 
 
 The negatives would be that the components aren’t designed for ag chemicals and won’t last.  At $6.95 you can replace a valve a bunch of times before you’re even money with a Raven/Capstan or your favorite flavor of valve.
 
@@ -29,6 +29,7 @@ Pressure Sensor  -  https://www.amazon.com/Pressure-Transducer-Sender-Sensor-Sta
 Current Sensor  -  https://www.amazon.com/dp/B07VL8NY32?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_5
 
 Teensy 4.1 W/Ethernet  -  https://www.amazon.com/dp/B08RSCFBNF?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1
+
 
 
 
