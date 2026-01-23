@@ -21,9 +21,11 @@ Flow meter  $8.99 -  https://www.amazon.com/gp/product/B0CC949527/ref=ppx_yo_dt_
 Pressure Sensor  $15.20 -  https://www.amazon.com/Pressure-Transducer-Sender-Sensor-Stainless/dp/B0748BHLQL?pd_rd_w=rgG6A&content-id=amzn1.sym.d7d5d8dd-56a7-4d54-9c0f-9d874f0a0a14&pf_rd_p=d7d5d8dd-56a7-4d54-9c0f-9d874f0a0a14&pf_rd_r=XZ2K3VSHET9GX73V3D8Z&pd_rd_wg=x8E3r&pd_rd_r=d09c411c-8908-4896-a73f-ec0b8fd7a650&pd_rd_i=B0748BHLQL&psc=1&ref_=pd_bap_d_grid_rp_0_1_ec_cp_pd_hp_d_atf_rp_3_i
 
 PWM drver $.83 - https://www.amazon.com/dp/B0FMJH3DML?ref=ppx_yo2ov_dt_b_fed_asin_title
+
 Diode $.20 - suppression at the inductive load - stripe to 12V out + other end to 12V -.    https://www.amazon.com/dp/B0CKSGFQ5T?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1
 
 Teensy 4.1 W/Ethernet  $48.42 -  [https://www.amazon.com/dp/B08RSCFBNF?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1](https://www.amazon.com/dp/B08RSCFBNF?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_3)
+
 
 
 
