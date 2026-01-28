@@ -1,0 +1,186 @@
+🌟 Kick & Hold Tuning Parameters Explained
+1️⃣ KH_kickDurationMs
+What it is:
+
+The number of milliseconds the solenoid gets full power (100% ON) at the start of each PWM cycle.
+
+Why it matters:
+
+A solenoid needs a strong initial "punch" to move the plunger off its seat.
+This is the kick.
+
+If too LOW:
+
+Valve may chatter
+
+Valve may only partially open
+
+Valve may open inconsistently
+
+Worse at lower system voltage or weaker drivers
+
+If too HIGH:
+
+Valve definitely opens
+
+But more heat
+
+More electrical load
+
+No benefit after the plunger is fully pulled in (wasted power)
+
+Typical range:
+
+2–6 ms
+Most agricultural solenoids respond well around 3–4 ms.
+
+2️⃣ KH_holdDutyCycle
+What it is:
+
+The percentage of time the solenoid is ON during the HOLD phase of PWM.
+
+After the plunger is pulled in, it takes much less power to keep it open.
+This is the hold.
+
+Example:
+KH_holdDutyCycle = 0.20 → 20% ON, 80% OFF during hold PWM.
+
+If too LOW:
+
+Valve may buzz or vibrate
+
+Valve may drop out or close momentarily
+
+Pressure delivery becomes jerky
+
+Very noticeable when multiple valves are ON
+
+If too HIGH:
+
+Valve stays open firmly
+
+But draws excess current
+
+Generates unnecessary heat
+
+Negates the efficiency benefit of Kick & Hold
+
+Typical range:
+
+0.10–0.30
+Around 0.20 (20%) is a common “safe but efficient” hold.
+
+3️⃣ KH_holdPWMFrequency
+What it is:
+
+The frequency (in Hz) of the HOLD phase’s PWM cycle.
+
+This controls how fast the ON/OFF pulses occur during the hold stage.
+
+Higher frequency (40–80 Hz):
+
+Smoother sound
+
+Tighter magnetic force
+
+But requires faster and more consistent CPU loop timing
+
+Teensy can handle it, but large sketches (like yours) may struggle
+
+Lower frequency (5–25 Hz):
+
+More tolerant of loop jitter
+
+Still provides stable hold
+
+Slight audible pulsing (normal)
+
+Most stable in real-world field conditions
+
+If frequency is TOO HIGH:
+
+Your sketch may not toggle the valve fast enough
+
+Hold PWM becomes unstable
+
+Valve may not stay open
+
+If frequency is TOO LOW:
+
+You may hear louder clicking/buzzing
+
+But performance is generally still OK
+
+Typical range:
+
+10–30 Hz
+This is the sweet spot for big applications with networking, EEPROM, and comms.
+
+🔧 How All Three Work Together
+
+Every PWM cycle for a nozzle looks like this:
+
+[ Kick Phase ] --> [ Hold PWM Phase ] --> [ OFF Phase ]
+
+Kick phase
+
+Full power ON for KH_kickDurationMs.
+
+Hold phase
+
+PWM ON/OFF using:
+
+KH_holdDutyCycle (how strong the hold is)
+
+KH_holdPWMFrequency (how fast it toggles)
+
+OFF phase
+
+No power until the next PWM cycle begins.
+
+This saves massive energy and reduces heat — solenoids draw large current only for a few milliseconds each cycle.
+
+🔩 Practical Tuning Strategy (Recommended)
+
+Start conservative:
+
+kickDuration = 4 ms
+holdDutyCycle = 0.20
+holdFreq = 20 Hz
+
+
+Test at lowest voltage you expect (tractor at idle)
+
+All valves should open cleanly
+
+No buzzing or stuttering
+
+Lower holdDutyCycle slowly to reduce heat
+
+When a valve starts to buzz → go back up one step
+
+Adjust kickDuration
+
+If openings are crisp → reduce until one starts to weaken
+
+Then back up by 1 ms
+
+Tweak frequency
+
+If valves sound rough → try 15–25 Hz
+
+If they sound solid but rough → raise slightly
+
+If high values cause missed toggles → lower it
+
+🧪 Field Notes from Experience
+
+People running Kick & Hold on sprayers often find:
+
+Kick: 3–4 ms
+
+Hold Duty: 0.18–0.24
+
+Hold Frequency: 15–25 Hz
+
+Higher frequency is rarely helpful unless your loop runs extremely smoothly.
