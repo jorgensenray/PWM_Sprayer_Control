@@ -6,7 +6,7 @@ A working, cost effective PWM sprayer.  This is a companion app to Ag Open GPS. 
 
 Features include; -  On/Off valve control  -  PWM valve control  -  Turn compensation  -  Staggered valve control  -  User definable Hz.
 
-The solenoid: It only draws .4 amps in my testing. I can measure 15 Hz and my non scientific tester is, blow thru it and if you feel wind on the other side it must work at that Hz rate, I quit at 50 Hz.
+The solenoid: It only draws .4 amps in my testing. I can measure 15 Hz and my non scientific tester is, blow thru it and if you feel wind on the other side it must work at that Hz rate, I quit at 50 Hz. From Adafuit discription - Actuating life: ≥ 50 million cycles.  Operating at 10Hz will last for approximately 57.87 days of continuous operation.
 
 This AOG compatible controller a Teensy 4.1 W/Ethernet and 2 MCP23017-E/SP-ND will get you 64 individually controlled nozzles. You'll need a PWM driver for each valve and a diode.
 
@@ -33,6 +33,7 @@ Ball Valve $29.00 -  https://www.amazon.com/dp/B09QC9YBKQ?ref_=ppx_hzsearch_conn
 Cytron Motor driver for Ball valve - $15.50  - https://www.amazon.com/dp/B07CW3GRL6?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1
 
 Pressure Sensor  $15.20 -  https://www.amazon.com/Pressure-Transducer-Sender-Sensor-Stainless/dp/B0748BHLQL?pd_rd_w=rgG6A&content-id=amzn1.sym.d7d5d8dd-56a7-4d54-9c0f-9d874f0a0a14&pf_rd_p=d7d5d8dd-56a7-4d54-9c0f-9d874f0a0a14&pf_rd_r=XZ2K3VSHET9GX73V3D8Z&pd_rd_wg=x8E3r&pd_rd_r=d09c411c-8908-4896-a73f-ec0b8fd7a650&pd_rd_i=B0748BHLQL&psc=1&ref_=pd_bap_d_grid_rp_0_1_ec_cp_pd_hp_d_atf_rp_3_i
+
 
 
 
