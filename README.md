@@ -24,7 +24,7 @@ Diode $.20 - suppression at the inductive load - stripe to 12V out + other end t
 
 Teensy 4.1 W/Ethernet  $48.42 -  [https://www.amazon.com/dp/B08RSCFBNF?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1](https://www.amazon.com/dp/B08RSCFBNF?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_3)
 
-2 MCP23017-E/SP-ND - https://www.digikey.com/en/products/detail/microchip-technology/MCP23017-E-SP/894272?_gl=1*ua1o3b*_up*MQ..*_gs*MQ..&gclid=CjwKCAiAqKbMBhBmEiwAZ3UboJEqNrqJIwivzAViIxyJHAtFYoRcghDElLTr7HVGW2znN0mNjYlR3BoCYwgQAvD_BwE&gclsrc=aw.ds&gbraid=0AAAAADrbLliEKMc8a0dzaJV_SRp9GFMWT
+2 MCP23017-E/SP-ND -  2 X $1.69 - https://www.digikey.com/en/products/detail/microchip-technology/MCP23017-E-SP/894272?_gl=1*ua1o3b*_up*MQ..*_gs*MQ..&gclid=CjwKCAiAqKbMBhBmEiwAZ3UboJEqNrqJIwivzAViIxyJHAtFYoRcghDElLTr7HVGW2znN0mNjYlR3BoCYwgQAvD_BwE&gclsrc=aw.ds&gbraid=0AAAAADrbLliEKMc8a0dzaJV_SRp9GFMWT
 
 Optional - Or add it later - Pressure adjustment from inside cab.
 
@@ -33,6 +33,7 @@ Ball Valve $29.00 -  https://www.amazon.com/dp/B09QC9YBKQ?ref_=ppx_hzsearch_conn
 Cytron Motor driver for Ball valve - $15.50  - https://www.amazon.com/dp/B07CW3GRL6?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1
 
 Pressure Sensor  $15.20 -  https://www.amazon.com/Pressure-Transducer-Sender-Sensor-Stainless/dp/B0748BHLQL?pd_rd_w=rgG6A&content-id=amzn1.sym.d7d5d8dd-56a7-4d54-9c0f-9d874f0a0a14&pf_rd_p=d7d5d8dd-56a7-4d54-9c0f-9d874f0a0a14&pf_rd_r=XZ2K3VSHET9GX73V3D8Z&pd_rd_wg=x8E3r&pd_rd_r=d09c411c-8908-4896-a73f-ec0b8fd7a650&pd_rd_i=B0748BHLQL&psc=1&ref_=pd_bap_d_grid_rp_0_1_ec_cp_pd_hp_d_atf_rp_3_i
+
 
 
 
